@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="gTV-IL-0wX" customClass="ImageCollectionViewCell" customModule="ReplicatePinterest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="157"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="219" height="157"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5m-9A-Obp">
+                        <rect key="frame" x="0.0" y="0.0" width="219" height="157"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature" translatesAutoresizingMaskIntoConstraints="NO" id="B16-i8-DSf">
+                                <rect key="frame" x="0.0" y="0.0" width="219" height="157"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="B16-i8-DSf" secondAttribute="bottom" id="7bQ-OB-0b8"/>
+                            <constraint firstAttribute="trailing" secondItem="B16-i8-DSf" secondAttribute="trailing" id="NFS-8B-ZsK"/>
+                            <constraint firstItem="B16-i8-DSf" firstAttribute="top" secondItem="h5m-9A-Obp" secondAttribute="top" id="f4B-aa-Dxz"/>
+                            <constraint firstItem="B16-i8-DSf" firstAttribute="leading" secondItem="h5m-9A-Obp" secondAttribute="leading" id="zz6-Ju-t3T"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="h5m-9A-Obp" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottom" id="blQ-qn-xd2"/>
+                <constraint firstAttribute="leading" secondItem="h5m-9A-Obp" secondAttribute="leading" id="dmB-cS-xj4"/>
+                <constraint firstItem="h5m-9A-Obp" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailing" id="fnZ-Hr-dcT"/>
+                <constraint firstAttribute="top" secondItem="h5m-9A-Obp" secondAttribute="top" id="gWt-qb-9lp"/>
+            </constraints>
+            <size key="customSize" width="219" height="157"/>
+            <connections>
+                <outlet property="image" destination="B16-i8-DSf" id="acx-yo-muC"/>
+                <outlet property="imageCointainer" destination="h5m-9A-Obp" id="1oq-yb-bGc"/>
+            </connections>
+            <point key="canvasLocation" x="136.64122137404578" y="57.394366197183103"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="nature" width="1749" height="980"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
